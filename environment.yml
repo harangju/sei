@@ -1,0 +1,27 @@
+name: sei
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - ipython
+  - pandas
+  - numpy
+  - plotly
+  - psutil
+  - sphinx
+  - pip
+  - pip:
+    - xlwings
+    - web3
+    - discord.py
+    - dislash.py
+    - eth_account
+    - loguru
+    - Pillow
+    - pycryptodome
+    - pytz
+    - qrcode
+    - requests
+    - urllib3
+    - kaleido
+    - sphinx-rtd-theme
