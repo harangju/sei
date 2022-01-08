@@ -31,7 +31,7 @@ async def help(client, message, args):
             value=f"`{pre}tip @receiver 100 (optional) walletID`",
             inline=False
         )
-    elif args[0]=='scholarship':
+    elif args[0]=='scholarship' or args[0]=='scholarships':
         embed.title = ':mortar_board: Manage scholarship'
         embed.add_field(
             name='Add scholar',
@@ -63,7 +63,7 @@ async def help(client, message, args):
             value=f"`{pre}claimAllSLP`",
             inline=True
         )
-    elif args[0]=='wallets':
+    elif args[0]=='wallet' or args[0]=='wallets':
         embed.title = ':credit_card: Manage wallets'
         embed.add_field(
             name='Add wallet',
@@ -93,16 +93,6 @@ async def help(client, message, args):
     elif args[0]=='admin':
         embed.title = ':technologist: Admin only'
         embed.add_field(
-            name='Show all wallets',
-            value=f"`{pre}showAllWallets`",
-            inline=True
-        )
-        embed.add_field(
-            name='Show admins',
-            value=f"`{pre}showAdmins`",
-            inline=True
-        )
-        embed.add_field(
             name='Add manager',
             value=f"`{pre}addManager @discord`",
             inline=True
@@ -115,6 +105,16 @@ async def help(client, message, args):
         embed.add_field(
             name='Show managers',
             value=f"`{pre}showManagers`",
+            inline=True
+        )
+        embed.add_field(
+            name='Show admins',
+            value=f"`{pre}showAdmins`",
+            inline=True
+        )
+        embed.add_field(
+            name='Show all wallets',
+            value=f"`{pre}showAllWallets`",
             inline=True
         )
     else:
