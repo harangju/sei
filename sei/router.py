@@ -6,52 +6,7 @@ async def route(client, message):
 
     client: discord.Client
     message: discord.Message
-        has correct prefix
-
-    &help
-
-    &addAdmin (owner)
-        discordID
-    &removeAdmin (owner)
-        discordID
-    &showAdmins (admin)
-
-    &addManager (admin)
-        discordID
-    &removeManager (admin)
-        discordID
-    &showManagers (admin)
-
-    &setScholarshipRate (admin / manager)
-        rate(0.-1.) guildwide(bool)
-
-    &addWallet (scholar) / addWallets (admin / manager)
-        address privateKey(opt) / list
-    &removeWallet (scholar) / removeWallets (admin / manager)
-        address / list
-    &showMyWallet (default) / showMyWallets (anyone)
-    &setDefaultWallet (anyone)
-        address
-    &showScholarWallets (manager)
-    &showAllWallets (admin)
-
-    DM
-    &addScholar / addScholars (manager)
-        discordID scholarshipAddress privateKey(opt) scholarAddress(opt)
-    &removeScholar / removeScholars (manager)
-        discordID
-    &showScholars (manager's scholars)
-    &showAllScholars (admin)
-
-    &claimSLP (manager / scholar?)
-    &claimAllSLP (manager)
-
-    &tip (anyone)
-         wallet(opt)
-
-    &stats (scholar / manager / admin)
-    &statsManager (manager)
-    &statsGuild (admin)
+        correct prefix assumed
     """
     logger.info(f"Message received: {message}")
 
